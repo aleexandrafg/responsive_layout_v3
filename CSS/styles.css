@@ -1,24 +1,28 @@
 * {
     box-sizing: border-box;
 }
-main-header {
+.main-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: rgb(228, 228, 228);
 }
 .primary-nav{
 	text-align: center;
 	padding: 10px 30px;
-    background-color: white;
     align-self: center;
     display: block;
 
 }
-
-img {
-    max-width: 100%;
-    align-self: center;
-}
+ .project {
+    padding-right: 1em;
+	padding-left: 1em;
+ }
+ .project-img {
+    border-radius: 5px;
+    width: 100%;
+ }
+    
 li {
     display: block;
     padding: 20px 15px;
@@ -35,17 +39,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     color:black;
     font-weight: 300;
-    margin: auto;
-    background-color: #F6F5F5;
+    margin: 0;
     text-align: center;
 }
 #contact{
     padding: 10px;
 }
-main {
-    background-color: white;
-    padding: 5px;
-}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ footer{
 /* media queries */ 
 
 @media ( min-width: 768px) {
- .primary-nav, .main-header {
+ .primary-nav, .main-header, .portfolio {
     display: flex;
     margin: 0 auto;
  }
@@ -66,9 +66,14 @@ footer{
     align-self: center;
     align-items: center;
  }
- 
- #portfolio {
- display: flex;
- flex-direction: column;
+ .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .project{
+    flex: 1;
+ }
+ #profile-info {
+    display: flex;
  }
 }
