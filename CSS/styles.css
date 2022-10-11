@@ -67,7 +67,7 @@ footer{
     align-items: center;
  }
  
- #portfolio-example {
+ #portfolio {
  display: flex;
  flex-direction: column;
  }
