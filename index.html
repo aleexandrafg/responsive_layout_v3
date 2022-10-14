@@ -10,20 +10,20 @@
   </head>
 <body>
     <header class="main-header">
-        <h1 class="name">Alexandra Escalona</h1>
+        <h1 class="name" id="home">Alexandra Escalona</h1>
         <nav>
             <ul class="primary-nav">
-                <li><a href="#">HOME</a></li>
+                <li><a href="#home">HOME</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <LI><a href="#contact">CONTACT</a></LI>
             </ul>
         </nav>
         <section id="profile-info">
-            <img src="images/responsive-layout-profile.png" alt="Student's picture" class="profile-image">
             <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            <img src="images/responsive-layout-profile.png" alt="Student's picture" class="profile-image">
         </section>
     </header>
-    <h1>Portfolio</h1>
+    <h1 id="portfolio">Portfolio</h1>
         <div class="portfolio">
             <section class="project">
                 <img src="images/portfolio-1.png" alt="Marketing page example" class="project-img">
@@ -73,7 +73,9 @@
         <h2>Alexandra Escalona</h2>
             <ul class="nav-footer">
                 <li class="to-top"> <a href="#profile-info">BACK TO TOP</a></li>
-    
+                <li class="bigger-screen"><a href="#home">HOME</a></li>
+                <li class="bigger-screen"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="bigger-screen"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </footer>
